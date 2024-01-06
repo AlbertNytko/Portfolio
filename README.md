@@ -45,5 +45,5 @@ Feel free to explore the portfolio to learn more about my projects, skills, and 
 
 ## Contributing
 
-If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
+If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request as I will leave this project public.
 
