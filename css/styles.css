@@ -52,9 +52,46 @@ nav a:hover {
     color: #ffd700; /* Change to your preferred hover color */
 }
 
+
+
+
+#skills {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-category {
+    flex: 1 1 200px;
+    margin-right: 20px;
+}
+
+.skills-category h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skills-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-category li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+
+
 /* Education section */
 #education {
-    background-color: #fff;
+    background-color: #f9fdfc;
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -66,12 +103,46 @@ nav a:hover {
 
 .education-item h3 {
     margin-bottom: 5px;
-    color: #333;
+    color: #010101;
 }
 
 .education-item p {
+    color: #0d0202;
+}
+
+
+
+
+#experience {
+    background-color: #f8f8f8;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.experience-item p {
     color: #666;
 }
+
+.experience-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience-item li {
+    margin-bottom: 5px;
+}
+
+
 
 
 .project-card {
