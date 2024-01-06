@@ -12,7 +12,6 @@ This is a personal portfolio website showcasing my coding projects, skills, and 
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Key Sections
 
