@@ -94,8 +94,34 @@ footer {
     background-color: #090000;
     color: #f0ebeb;
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    padding: 0px;
+    position: static;
     bottom: 0;
     width: 100%;
+}
+
+
+#contact {
+    background-color: #f8f8f8;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(104, 66, 66, 0.1);
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact li {
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
