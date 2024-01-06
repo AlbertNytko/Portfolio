@@ -1,0 +1,101 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #090101;
+    line-height: 1.6;
+    background-color: #f3eeee;
+}
+
+h1, h2, h3 {
+    color: #0c0101;
+}
+
+a {
+    color: #00060d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.portfolio-section {
+    padding: 50px;
+    background-color: #f3efef;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: #080000;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #f3f6f5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change to your preferred hover color */
+}
+
+.project-card {
+    background-color: #f7f7f9;
+    border: 1px solid #040303;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin-top: 10px;
+}
+
+.project-card p {
+    color: #0a0101;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #f2eeee;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+footer {
+    background-color: #090000;
+    color: #f0ebeb;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
