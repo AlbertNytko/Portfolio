@@ -112,7 +112,6 @@ nav a:hover {
 
 
 
-
 #experience {
     background-color: #f8f8f8;
     padding: 50px;
@@ -141,6 +140,9 @@ nav a:hover {
 .experience-item li {
     margin-bottom: 5px;
 }
+
+
+
 
 
 
@@ -183,6 +185,11 @@ nav a:hover {
 
 
 
+
+
+
+
+
 footer {
     background-color: #090000;
     color: #f0ebeb;
@@ -192,6 +199,10 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+
+
 
 
 #contact {
