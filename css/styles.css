@@ -83,7 +83,7 @@ nav a:hover {
     overflow-wrap: break-word;
     word-wrap: break-word;
     width: 30em; /* Set a specific width for word break, adjust as needed */
-    margin-right: 20px; /* Add margin for better spacing with other sections */
+    margin-right: 100px; /* Add margin for better spacing with other sections */
 }
 
 .languages-section,
@@ -105,9 +105,10 @@ nav a:hover {
 
 .language-picture,
 .hobby-picture {
-    width: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
+    width: 200px;
+    border-radius: 20%;
+    margin-right: 50px;
+    
 }
 
 .languages-section ul,
@@ -123,24 +124,7 @@ nav a:hover {
     color: #070303;
 }
 
-/* Adjustments for small screens */
-@media screen and (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .about-text {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .languages-section,
-    .hobbies-section {
-        width: 100%;
-        margin-right: 0; /* Reset margin for small screens */
-    }
-}
 
 
 
