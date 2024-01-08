@@ -82,13 +82,13 @@ nav a:hover {
 .about-text {
     overflow-wrap: break-word;
     word-wrap: break-word;
-    width: 35em; /* Set a specific width for word break, adjust as needed */
-    margin-right: 80px; /* Add margin for better spacing with other sections */
+    width: 30em; /* Set a specific width for word break, adjust as needed */
+    margin-right: 20px; /* Add margin for better spacing with other sections */
 }
 
 .languages-section,
 .hobbies-section {
-    width: calc(50% - 5px); /* Set each section to half the width with some spacing */
+    width: calc(30% - 5px); /* Set each section to half the width with some spacing */
     margin-top: 0px; /* Increase the top margin to create more space */
 }
 
