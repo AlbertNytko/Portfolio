@@ -82,8 +82,8 @@ nav a:hover {
 .about-text {
     overflow-wrap: break-word;
     word-wrap: break-word;
-    width: 50em; /* Set a specific width for word break, adjust as needed */
-    margin-right: 380px; /* Add margin for better spacing with other sections */
+    width: 35em; /* Set a specific width for word break, adjust as needed */
+    margin-right: 80px; /* Add margin for better spacing with other sections */
 }
 
 .languages-section,
