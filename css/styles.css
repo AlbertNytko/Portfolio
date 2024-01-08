@@ -55,61 +55,62 @@ nav a:hover {
 
 
 
-
 #about {
     background-color: #f2d2d2;
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column; /* Changed to column */
+    align-items: flex-start; /* Align left */
+    text-align: left; /* Align left */
 }
 
 .about-content {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align left */
+    align-items: center;
     width: 100%;
     margin-bottom: 20px;
 }
 
 .profile-picture {
-    width: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     margin-right: 20px;
 }
 
 .about-text {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    width: 60%; /* Adjusted width */
-    margin-right: 20px; /* Adjusted margin */
+    max-width: 40%;
+    margin-bottom: 20px; /* Adjusted margin */
 }
 
 .languages-section,
 .hobbies-section {
-    width: 30%; /* Adjusted width */
-    margin-top: 0px;
+    width: 100%;
 }
 
 .languages-section h3,
 .hobbies-section h3 {
-    margin-bottom: 10px; /* Adjusted margin */
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .language-item,
 .hobby-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px; /* Adjusted margin */
+    margin-bottom: 10px;
 }
 
 .language-picture,
 .hobby-picture {
-    width: 150px; /* Adjusted width */
-    height: 150px; /* Adjusted height for consistency */
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    margin-right: 10px; /* Adjusted margin */
+    margin-right: 10px;
 }
 
 .languages-section ul,
@@ -123,6 +124,7 @@ nav a:hover {
 .hobbies-section li {
     margin-bottom: 5px;
     color: #070303;
+    text-align: left;
 }
 
 /* Adjustments for small screens */
@@ -133,19 +135,17 @@ nav a:hover {
     }
 
     .about-text {
-        width: 100%;
+        max-width: 100%;
         margin-top: 20px;
+        margin-bottom: 20px; /* Adjusted margin */
     }
 
-    .languages-section,
-    .hobbies-section {
-        width: 100%;
-        margin-right: 0;
+    .language-picture,
+    .hobby-picture {
+        width: 50px;
+        height: 50px;
     }
 }
-
-
-
 
 
 
