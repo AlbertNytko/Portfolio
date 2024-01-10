@@ -55,7 +55,7 @@ nav a:hover {
 
 
 #about {
-    background: linear-gradient(135deg, #4b4d4f 0%, #2a73b3 100%);
+    background: linear-gradient(135deg, #81c08c 0%, #2a73b3 100%);
     padding: 80px; /* Increase padding for larger background */
     border-radius: 150px; /* Increase border-radius for a larger rounded shape */
     box-shadow: 0 0 20px rgba(149, 26, 26, 0.5);
@@ -91,19 +91,19 @@ nav a:hover {
 
 #about .right-images img {
     width: 180px;
-    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+    max-width: 100%;
     height: 180px;
     border-radius: 150%;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
-    box-sizing: border-box; /* Include padding and border in the total width and height */
+    box-sizing: border-box;
 }
 
 /* Adjustments for small screens */
 @media screen and (max-width: 768px) {
     #about .right-images {
-        position: static; /* Reset position for small screens */
-        flex-direction: row; /* Adjust layout for small screens */
+        position: static;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -116,18 +116,18 @@ nav a:hover {
 
 /* Additional styling for hover effect */
 #about .right-images img:hover {
-    transform: scale(1.9); /* Increase size on hover */
+    transform: scale(1.9);
 }
 
-/* Swap effect - modify as needed */
+
 #about .right-images img:nth-child(odd) {
     /* Style for odd-indexed images */
-    background-color: #ffa500; /* Change background color */
+    background-color: #ffa500;
 }
 
 #about .right-images img:nth-child(even) {
     /* Style for even-indexed images */
-    background-color: #080e08; /* Change background color */
+    background-color: #080e08;
 }
 
 
@@ -167,7 +167,7 @@ nav a:hover {
 .languages-section h3,
 .hobbies-section h3 {
     font-size: 24px;
-    color: #fff;
+    color: #040202;
     margin-bottom: 10px;
 }
 
@@ -238,7 +238,7 @@ nav a:hover {
 
 /* Skills section */
 #skills {
-    background-color: #ced2d2;
+    background: linear-gradient(135deg, #81c08c 0%, #2a73b3 100%);
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 10 90px rgba(97, 173, 140, 0.1);
@@ -329,7 +329,7 @@ nav a:hover {
 
 /* Education section */
 #education {
-    background-color: #ced2d2;
+    background: linear-gradient(135deg, #81c08c 0%, #2a73b3 100%);
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -364,7 +364,7 @@ nav a:hover {
 
 
 #experience {
-    background-color: #ced2d2;
+    background: linear-gradient(135deg, #81c08c 0%, #2a73b3 100%);
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(214, 103, 103, 0.1);
@@ -399,7 +399,7 @@ nav a:hover {
 
 
 .project-card {
-    background-color: #c7c7ed;
+    background: linear-gradient(135deg, #81c08c 0%, #2a73b3 100%);
     border: 1px solid #040303;
     border-radius: 8px;
     padding: 20px;
@@ -457,7 +457,7 @@ footer {
 
 
 #contact {
-    background-color: #ced2d2;
+    background: linear-gradient(135deg, #81c08c 0%, #2a73b3 100%);
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(104, 66, 66, 0.1);
