@@ -56,61 +56,137 @@ nav a:hover {
 
 
 #about {
-    background-color: #f2d2d2;
-    padding: 50px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #4b4d4f 0%, #2a73b3 100%);
+    padding: 80px; /* Increase padding for larger background */
+    border-radius: 150px; /* Increase border-radius for a larger rounded shape */
+    box-shadow: 0 0 20px rgba(149, 26, 26, 0.5);
     display: flex;
-    flex-direction: column; /* Changed to column */
-    align-items: flex-start; /* Align left */
-    text-align: left; /* Align left */
+    gap: 40px;
+    width: 80%; /* Make the section fill the entire horizontal width */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
 }
 
-.about-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start; /* Align left */
-    align-items: center;
+#about::before,
+#about::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
     width: 100%;
-    margin-bottom: 20px;
+    height: 100%;
+    background-repeat: repeat;
+    z-index: -1; /* Ensure the background is behind the content */
+}
+
+#about .right-images {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+#about .right-images img {
+    width: 180px;
+    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+    height: 180px;
+    border-radius: 150%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box; /* Include padding and border in the total width and height */
+}
+
+/* Adjustments for small screens */
+@media screen and (max-width: 768px) {
+    #about .right-images {
+        position: static; /* Reset position for small screens */
+        flex-direction: row; /* Adjust layout for small screens */
+        align-items: center;
+    }
+
+    #about .right-images img {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+}
+
+/* Additional styling for hover effect */
+#about .right-images img:hover {
+    transform: scale(1.9); /* Increase size on hover */
+}
+
+/* Swap effect - modify as needed */
+#about .right-images img:nth-child(odd) {
+    /* Style for odd-indexed images */
+    background-color: #ffa500; /* Change background color */
+}
+
+#about .right-images img:nth-child(even) {
+    /* Style for even-indexed images */
+    background-color: #080e08; /* Change background color */
+}
+
+
+.profile-section,
+.details-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-picture {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
 }
 
 .about-text {
-    max-width: 40%;
-    margin-bottom: 20px; /* Adjusted margin */
+    max-width: 600px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    text-align: left;
 }
 
 .languages-section,
 .hobbies-section {
-    width: 100%;
+    text-align: left;
+    color: #fff;
+    max-width: 400px;
 }
 
 .languages-section h3,
 .hobbies-section h3 {
+    font-size: 24px;
+    color: #fff;
     margin-bottom: 10px;
-    text-align: left;
 }
 
 .language-item,
 .hobby-item {
     display: flex;
-    align-items: center;
+    align-items: left;
     margin-bottom: 10px;
 }
 
 .language-picture,
 .hobby-picture {
-    width: 180px;
-    height: 180px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    margin-right: 10px;
+    align-items: left;
+    margin-right: 20px;
+    object-fit: cover;
 }
 
 .languages-section ul,
@@ -122,28 +198,39 @@ nav a:hover {
 
 .languages-section li,
 .hobbies-section li {
+    font-size: 16px;
     margin-bottom: 5px;
-    color: #070303;
-    text-align: left;
+    color: #fff;
 }
 
 /* Adjustments for small screens */
 @media screen and (max-width: 768px) {
-    .about-content {
+    #about {
         flex-direction: column;
-        align-items: center;
     }
 
-    .about-text {
+    .profile-section,
+    .details-section {
+        text-align: center;
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .about-text,
+    .languages-section,
+    .hobbies-section {
         max-width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px; /* Adjusted margin */
     }
 
     .language-picture,
     .hobby-picture {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
+        margin-right: 0;
     }
 }
 
