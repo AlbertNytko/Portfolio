@@ -333,12 +333,18 @@ nav a:hover {
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: #050404;
 }
 
 .education-item {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .education-content {
@@ -347,19 +353,26 @@ nav a:hover {
 
 .education-content h3 {
     margin-bottom: 10px;
-    color: #010101;
+    color: #060604; /* Gold color for headings */
 }
 
 .education-content p {
-    color: #0d0202;
+    color: #060404; /* Light gray color for text */
     margin: 0;
 }
 
 .education-item img {
-    width: 9%; /* Adjust the width as needed */
+    width: 9%;
     height: auto;
     border-radius: 8px;
-    margin-left: 10px; /* Add margin for spacing */
+    margin-left: 10px;
+}
+
+/* Adjustments for small screens */
+@media screen and (max-width: 768px) {
+    .education-item {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -368,30 +381,47 @@ nav a:hover {
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(214, 103, 103, 0.1);
+    text-align: left;
+    color: #020202;
 }
 
 .experience-item {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .experience-item h3 {
-    margin-bottom: 5px;
-    color: #0b0707;
+    margin-bottom: 10px;
+    color: #090905; /* Gold color for headings */
 }
 
 .experience-item p {
-    color: #0a0707;
+    color: #070505; /* Light gray color for text */
+    margin-bottom: 15px;
 }
 
 .experience-item ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .experience-item li {
-    margin-bottom: 5px;
+    font-size: 18px;
+    position: relative;
+    color: #060505; /* Light gray color for list items */
+    margin-bottom: 10px;
 }
 
+/* Adjustments for small screens */
+@media screen and (max-width: 768px) {
+    .experience-item {
+        margin-bottom: 20px;
+    }
+}
 
 
 
